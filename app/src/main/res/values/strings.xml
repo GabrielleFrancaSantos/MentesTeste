@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MentesTeste</string>
+    <string name="comecar">Começar</string>
+    <string name="bem_vindo">Bem-vindo(a) ao Mentes Sem Fronteiras,</string>
+    <string name="texto_inicial">Estamos aqui para apoiar você em momentos difíceis. Encontre recursos e orientações para enfrentar desafios emocionais e sociais.</string>
+    <string name="texto_inicial02">Lembre-se: você não está sozinho(a)!</string>
+    <string name="imagem_logo">Logo Mentes Sem Fronteiras</string>
+    <string name="texto_inicial03">Acesse</string>
+    <string name="texto_inicial04">Ou continue sem login</string>
+    <string name="texto_inicial05">Logo Mentes Sem Fronteiras</string>
+    <string name="login">Login</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="convidado">Continuar como convidado</string>
+    <string name="texto_login01">Com e-mail ou telefone e senha para entrar</string>
+    <string name="texto_login02">Digite e-mail ou telefone</string>
+    <string name="texto_login03">Digite sua senha</string>
+    <string name="lembrar_senha">Lembrar minha senha</string>
+    <string name="esqueci_senha">Esqueci a senha</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="acessar">Acessar</string>
+    <string name="titulo_cadastro">Um novo começo, comece com um clique!</string>
+    <string name="digite_nome">Nome e Sobrenome</string>
+
+
+</resources>

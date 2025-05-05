@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormVoluntario">
+
+    <!-- Botão de voltar -->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/button_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/ic_back"
+        android:contentDescription="Voltar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Texto de abertura -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Seja a mudança, torne-se um volutário"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Data de Nascimento-->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Data de Nascimento"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView6" />
+
+    <EditText
+        android:id="@+id/edit_data_nascimento"
+        style="@style/Edit_Text_Blue"
+        android:layout_width="0dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Digite sua data de nascimento"/>
+
+    <!-- Cidade -->
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Cidade"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_data_nascimento" />
+
+    <EditText
+        android:id="@+id/edit_cidade"
+        style="@style/Edit_Text_Blue"
+        android:layout_width="0dp"
+        android:minHeight="48dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@id/textView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit_estado"
+        android:layout_marginStart="16dp"
+        android:hint="Digite sua cidade"/>
+
+    <!-- Estado -->
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Estado"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/edit_cidade"
+        app:layout_constraintTop_toTopOf="@id/textView14" />
+
+    <EditText
+        android:id="@+id/edit_estado"
+        style="@style/Edit_Text_Blue"
+        android:layout_width="0dp"
+        android:minHeight="48dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/edit_cidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginEnd="16dp"
+        android:hint="Digite seu estado"/>
+
+    <!-- Área de Atuação -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Área de atuação"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_cidade" />
+
+    <EditText
+        android:id="@+id/edit_area"
+        style="@style/Edit_Text_Blue"
+        android:layout_width="0dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Digite sua área de atuação"/>
+
+    <!-- Disponibilidade -->
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Disponibilidade"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_area" />
+
+    <EditText
+        android:id="@+id/edit_disponibilidade"
+        style="@style/Edit_Text_Blue"
+        android:layout_width="0dp"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Digite sua disponibilidade"/>
+
+    <!-- Por que ser voluntário -->
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Por que desejo ser voluntário?"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_disponibilidade" />
+
+    <EditText
+        android:id="@+id/edit_motivacao"
+        style="@style/Edit_Text_Blue"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Escrecreva o motivo de preencher este formulário"/>
+
+    <!-- Botão Enviar Paara Análise -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_enviar"
+        style="@style/botaoPadrao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue_light"
+        android:text="Enviar para análise"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_motivacao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
